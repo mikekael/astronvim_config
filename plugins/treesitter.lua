@@ -6,6 +6,8 @@ return {
       "typescript",
       "prisma",
       "javascript",
+      "json",
+      "jsonc",
     },
   },
 }

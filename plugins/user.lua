@@ -27,18 +27,18 @@ return {
     end,
     event = "User AstroFile",
   },
-  {
-    "https://codeberg.org/esensar/nvim-dev-container",
-    config = function()
-      require("devcontainer").setup {
-        attach_mounts = {
-          neovim_config = {
-            enabled = true,
-            options = { "readonly" },
-          },
-        },
-      }
-    end,
-    event = "VeryLazy",
-  },
+  -- {
+  --   "https://codeberg.org/esensar/nvim-dev-container",
+  --   config = function()
+  --     require("devcontainer").setup {
+  --       attach_mounts = {
+  --         neovim_config = {
+  --           enabled = true,
+  --           options = { "readonly" },
+  --         },
+  --       },
+  --     }
+  --   end,
+  --   event = "VeryLazy",
+  -- },
 }
