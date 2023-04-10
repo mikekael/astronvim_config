@@ -85,6 +85,7 @@ return {
         "html",
         "json",
         "lua",
+        "prisma",
       },
       command = "setlocal tabstop=2 shiftwidth=2",
     })
