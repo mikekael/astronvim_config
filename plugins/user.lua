@@ -9,4 +9,22 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {},
+    event = "User AstroFile",
+    keys = {
+      { "<Leader>T", "<cmd>TodoTelescope<cr>", desc = "Check for TODOs" },
+    },
+  },
+  {
+    "prisma/vim-prisma",
+    config = function()
+      -- no configuration for this plugin
+    end,
+    event = "User AstroFile",
+  },
 }

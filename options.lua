@@ -7,6 +7,11 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    tabstop = 4,
+    shiftwidth = 4,
+    expandtab = true,
+    list = false,
+    listchars = "eol:$,tab:>-,trail:~,extends:>,precedes:<,space:.",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
@@ -24,6 +29,5 @@ return {
 --   local_vim.g.mapleader = " "
 --   local_vim.opt.whichwrap = vim.opt.whichwrap - { 'b', 's' } -- removing option from list
 --   local_vim.opt.shortmess = vim.opt.shortmess + { I = true } -- add to option list
---
---   return local_vim
+-- return local_vim
 -- end
