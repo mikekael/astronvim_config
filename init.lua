@@ -95,5 +95,11 @@ return {
       pattern = "DevcontainerBuildProgress",
       callback = function() vim.cmd "redrawstatus" end,
     })
+
+    -- autotrim whitespace
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      pattern = "*",
+      command = [[%s/\s\+$//e]],
+    })
   end,
 }
