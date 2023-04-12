@@ -10,4 +10,5 @@ return {
   { import = "astrocommunity.pack.prisma" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.yaml" },
 }

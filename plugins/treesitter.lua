@@ -8,6 +8,8 @@ return {
       "javascript",
       "json",
       "jsonc",
+      "python",
+      "toml",
     },
   },
 }

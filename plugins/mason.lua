@@ -8,6 +8,8 @@ return {
       ensure_installed = {
         "lua_ls",
         "prismals",
+        "pyright",
+        "ruff_lsp",
       },
     },
   },
@@ -16,14 +18,19 @@ return {
     "jay-babu/mason-null-ls.nvim",
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
-      ensure_installed = { "prettier", "stylua" },
+      ensure_installed = {
+        "prettier",
+        "stylua",
+        "isort",
+        "black",
+      },
     },
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
-      -- ensure_installed = { "python" },
+      ensure_installed = { "python" },
     },
   },
 }
